@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/single_bottomsheet"
+    tools:ignore="MissingClass">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardElevation="5dp"
+            app:contentPadding="5dp"
+            app:cardCornerRadius="15dp"
+            app:cardMaxElevation="5dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="0dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_launcher"
+                android:id="@+id/pimage"
+                android:contentDescription="@string/content_description" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardElevation="5dp"
+            app:contentPadding="5dp"
+            android:layout_marginTop="5dp"
+            app:cardCornerRadius="15dp"
+            app:cardMaxElevation="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layout_event"
+                android:orientation="vertical">
+                <com.robbie.wezacareships.utils.WezacareTextViewBold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ship"
+                    android:textColor="#F45B6D"
+                    android:gravity="center_horizontal"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="@string/ship_d" />
+
+                <com.robbie.wezacareships.utils.WezacareTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_shipid"
+                    android:gravity="center_horizontal"
+                    android:textColor="#F45B6D"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:text="@string/shipid" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardElevation="5dp"
+            android:layout_marginTop="10dp"
+            app:contentPadding="5dp"
+            app:cardCornerRadius="15dp"
+            app:cardMaxElevation="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layout_positions"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardview1"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/layout_position"
+                    android:layout_weight="1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardview1"
+                    android:orientation="vertical">
+                    <com.robbie.wezacareships.utils.WezacareTextViewBold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:drawablePadding="5dp"
+                        android:textSize="18sp"
+                        android:id="@+id/locations"
+                        android:text="@string/ship_nme" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:id="@+id/tv_shipname"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/locations"
+                        android:text="@string/ship_name" />
+                </LinearLayout>
+
+                <View style="@style/Divider.Vertical"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/layout_dates"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardview1"
+                    android:orientation="vertical">
+
+                    <com.robbie.wezacareships.utils.WezacareTextViewBold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/dates"
+                        android:drawablePadding="5dp"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:text="@string/port" />
+                    <com.robbie.wezacareships.utils.WezacareTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_port"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:text="@string/port" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardElevation="5dp"
+            app:contentPadding="5dp"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="15dp"
+            app:cardMaxElevation="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.robbie.wezacareships.utils.WezacareTextViewBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/type"
+                android:textSize="18sp"
+                android:gravity="center_horizontal"
+                android:textStyle="bold"
+                android:text="@string/ship_type" />
+            <com.robbie.wezacareships.utils.WezacareTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:id="@+id/tv_ship_type"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:text="@string/ship_typ" />
+        </LinearLayout>
+        </androidx.cardview.widget.CardView>
+         <androidx.cardview.widget.CardView
+            android:id="@+id/cardview4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardElevation="5dp"
+            android:layout_marginTop="10dp"
+            app:contentPadding="5dp"
+            app:cardCornerRadius="15dp"
+            app:cardMaxElevation="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layout_ships"
+                app:layout_constraintStart_toStartOf="parent"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/layout_weight"
+                    android:layout_weight="1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:orientation="vertical">
+                    <com.robbie.wezacareships.utils.WezacareTextViewBold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:drawablePadding="5dp"
+                        android:textSize="18sp"
+                        android:id="@+id/weights"
+                        android:text="@string/ship_weight_in_kg_s" />
+
+                    <com.robbie.wezacareships.utils.WezacareTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:id="@+id/tv_weight"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/locations"
+                        android:text="@string/ship_weight_in_kg" />
+                </LinearLayout>
+
+                <View style="@style/Divider.Vertical"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/layout_year"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardview1"
+                    android:orientation="vertical">
+
+                    <com.robbie.wezacareships.utils.WezacareTextViewBold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/year"
+                        android:drawablePadding="5dp"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:text="@string/year_built" />
+                    <com.robbie.wezacareships.utils.WezacareTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_year"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:text="@string/year" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <com.robbie.wezacareships.utils.WezacareButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:clickable="true"
+            android:background="@drawable/button_background"
+            android:foreground="?attr/selectableItemBackground"
+            android:textColor="@color/white"
+            android:textSize="@dimen/btn_textSize"
+            android:id="@+id/idBtnDismiss"
+            android:text="@string/dismiss"
+            android:focusable="true" />
+
+
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

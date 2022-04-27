@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">WezaCare Ships</string>
+    <string name="ship_id">Ship Id</string>
+    <string name="port_name">Port Name</string>
+    <string name="ship_name">Ship Name</string>
+    <string name="wezacare_ships">Wezacare Ships</string>
+    <string name="content_description">image</string>
+    <string name="ship_d">SHIP ID</string>
+    <string name="shipid">Ship ID</string>
+    <string name="ship_nme">SHIP NAME</string>
+    <string name="port">PORT</string>
+    <string name="ship_type">SHIP TYPE</string>
+    <string name="ship_typ">Ship Type</string>
+    <string name="ship_weight_in_kg_s">SHIP WEIGHT in kg\'s</string>
+    <string name="ship_weight_in_kg">Ship Weight in kg\'s</string>
+    <string name="year_built">YEAR BUILT</string>
+    <string name="year">year</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="hyphen">—</string>
+</resources>
