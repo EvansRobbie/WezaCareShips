@@ -9,3 +9,7 @@ MainActivity
 
 SearchView
 ![Screenshot_20220427-154500_WezaCare Ships](https://user-images.githubusercontent.com/90752446/165521200-841cecc9-32b2-4d4e-93a5-cd32f705a88c.jpg)
+
+BottomSheet upon click
+![Screenshot_20220427-152629_WezaCare Ships](https://user-images.githubusercontent.com/90752446/165521908-4212959b-733a-4bd1-8026-5aaa0087dc93.jpg)
+
