@@ -7,4 +7,5 @@ MainActivity
 
 ![Screenshot_20220427-152620_WezaCare Ships](https://user-images.githubusercontent.com/90752446/165519612-738217c8-07ac-4933-8058-b31657825c6c.jpg)
 
-
+SearchView
+![Screenshot_20220427-154500_WezaCare Ships](https://user-images.githubusercontent.com/90752446/165521200-841cecc9-32b2-4d4e-93a5-cd32f705a88c.jpg)
