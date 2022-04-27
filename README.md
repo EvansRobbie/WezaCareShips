@@ -2,3 +2,9 @@
 This is an app to illustrate the use of API.s in kotlin
 SplashActivity
 ![Screenshot_20220427-152616_WezaCare Ships](https://user-images.githubusercontent.com/90752446/165518575-ef48cdb6-be4a-4540-8d8a-91d73122b5da.jpg)
+
+MainActivity 
+
+![Screenshot_20220427-152620_WezaCare Ships](https://user-images.githubusercontent.com/90752446/165519612-738217c8-07ac-4933-8058-b31657825c6c.jpg)
+
+
